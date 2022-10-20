@@ -1,0 +1,43 @@
+\documentclass[
+12pt, % Main document font size
+a4paper, % Paper type, use 'letterpaper' for US Letter paper
+oneside, % One page layout (no page indentation)
+%twoside, % Two page layout (page indentation for binding and different headers)
+]{article}
+
+\include{../../structure.tex}
+\include{../../titles.tex}
+\include{../../units.tex}
+
+\begin{document}
+    \titlePUKE{18}{temat}{N02-20g}{17.03}{24.03}
+
+    %\includepdf{Figures/PDF/Protokol_pomiarowy.pdf}
+
+    \tableofcontents
+    % \listoffigures
+    % \listoftables
+    % \begin{landscape}
+    %     \begin{figure}
+    %         \section{Stanowisko pomiarowe}
+    %         \centering
+    %         \includegraphics[width=\linewidth-142px]
+    %             {Figures/PDF/Stanowisko_pomiarowe.pdf}
+    %             \caption{Shemat budowy stanowiska pomiarowego z wyszczególnionymi elementami oraz pokazanym sposobem podlączenia.}
+    %     \end{figure}
+    % \end{landscape}
+    \section{Wstęp}
+    \include{Sections/Opis_wymiennika.tex}
+    \include{Sections/Wybor_materialu.tex}
+    \include{Sections/Rysunki.tex}
+
+    \section{Charakterystyka techniczna}
+    \include{Sections/Dane_wejsciowe.tex}
+    \include{Sections/Stale_materialowe.tex}
+    \include{Sections/Wykres_przepywu.tex}
+
+    \include{Sections/Podsumowanie.tex}
+     
+    %\bibliographystyle{plain} 
+    %\bibliography{main}
+\end{document}
