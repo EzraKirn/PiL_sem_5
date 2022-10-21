@@ -10,7 +10,9 @@ oneside, % One page layout (no page indentation)
 \include{../../units.tex}
 
 \begin{document}
-    \titlePUKE{18}{temat}{N02-20g}{17.03}{24.03}
+    \titlePUKE{Rurowy wymiennik ciepła typu: \\
+    Rura w rurze - rury gięte\\
+    }
 
     %\includepdf{Figures/PDF/Protokol_pomiarowy.pdf}
 
@@ -26,17 +28,22 @@ oneside, % One page layout (no page indentation)
     %             \caption{Shemat budowy stanowiska pomiarowego z wyszczególnionymi elementami oraz pokazanym sposobem podlączenia.}
     %     \end{figure}
     % \end{landscape}
+
+    \pagebreak
+
     \section{Wstęp}
-    \include{Sections/Opis_wymiennika.tex}
-    \include{Sections/Wybor_materialu.tex}
-    \include{Sections/Rysunki.tex}
+        \input{Sections/Wstep/Opis_wymiennika.tex}
+        \input{Sections/Wstep/Zalozenia_projektu.tex}
+        \input{Sections/Wstep/Wybor_materialu.tex}    
+        \input{Sections/Wstep/Rysunki}
+    
+    \pagebreak
 
     \section{Charakterystyka techniczna}
-    \include{Sections/Dane_wejsciowe.tex}
-    \include{Sections/Stale_materialowe.tex}
-    \include{Sections/Wykres_przepywu.tex}
-
-    \include{Sections/Podsumowanie.tex}
+        \input{Sections/Charakterystyka_techniczna/Dane_wejsciowe.tex}
+        \input{Sections/Charakterystyka_techniczna/Stale_materialowe.tex}
+        \input{Sections/Charakterystyka_techniczna/Podsumowanie.tex}
+        % \input{Sections/Charakterystyka_techniczna/Wykres_przepywu.tex}
      
     %\bibliographystyle{plain} 
     %\bibliography{main}
