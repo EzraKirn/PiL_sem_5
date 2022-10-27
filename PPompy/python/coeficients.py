@@ -19,8 +19,8 @@ for name in names:
             else:
                 y.append(float(line.rstrip()))
         for c in np.polyfit(x,y,len(x)-1):
-            f.write("\n")
             f.write(str(c)) 
+            f.write("\n")
     x=[]
     y=[]    
     count=0

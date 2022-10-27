@@ -42,7 +42,6 @@ void show_data(std::string file_name){
 int main(){
     fill_data();
     fill_data();
-    fill_data();
     system("python\\coeficients.py");
     return 0;
 }
