@@ -11,14 +11,15 @@ count=0
 x=[]
 y=[]
 for name in names:
-    with open(name,"r+") as f:
+    with open(name,"r") as f:
         for line in f:
             count += 1
             if count%2==1:
                 x.append(float(line.rstrip()))
             else:
                 y.append(float(line.rstrip()))
-        for c in np.polyfit(x,y,len(x)-1):
+    with open(name,"w") as f:
+        for c in np.polyfit(x,y,len(x)):
             f.write(str(c)) 
             f.write("\n")
     x=[]

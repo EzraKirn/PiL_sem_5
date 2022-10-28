@@ -8,10 +8,13 @@
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode": true,
             "stopOnEntry": true,
+            "cwd":"${workspaceFolder}",
+            "program": "${file}",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal",
+            "justMyCode": true
         }
     ]
 }
